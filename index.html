@@ -10,20 +10,233 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Icon -->
+    <link rel="icon" type="image/jpg" href="assets/logo.png" />
     <title>Departure Mode ON</title>
   </head>
   <body>
-    <div class="text-center my-5">
-      <h1 class="text-danger">Error 404</h1>
-      <br />
-      <p>Fecha de Modificacion</p>
-      <p>1/10/2024 Hora 15:03</p>
-      <p>Romano Rodrigo</p>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-transparent fixed-top align-items-center"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand d-lg-none d-xl-none d-xxl-none" href="#"
+            ><img src="assets/logo.png"
+          /></a>
+          <button
+            class="navbar-toggler navbar-dark text-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto d-flex align-items-center fuente1">
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-bold btnNav"
+                  aria-current="page"
+                  href="#inicio"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold btnNav" href="#destinosimp"
+                  >Destinos Imperdibles</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btnNav fw-bold" href="#cruceros">Cruceros</a>
+              </li>
+              <li>
+                <a
+                  class="navbar-brand d-none d-lg-block d-xl-block d-xxl-block mx-0"
+                  href="#"
+                  ><img src="assets/logo.png"
+                /></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link btnNav fw-bold" href="#masdestinos"
+                  >Más destinos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btnNav fw-bold" href="#tipviajes"
+                  >Tips de viaje</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btnNav fw-bold" href="#contacto"
+                  >Contáctanos</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="inicio"></div>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active position-relative">
+            <img src="assets/header/ejemplo.jpg" class="d-block w-100" />
+            <div
+              class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle"
+            >
+              <h1 class="fuente1 display-4 fw-bold">
+                Haz una pausa en la rutina
+              </h1>
+              <h3 class="fuente-color">
+                Comienza un viaje inolvidable con nosotros.
+              </h3>
+            </div>
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="assets/header/ejemplo2.jpg" class="d-block w-100" />
+            <div
+              class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle"
+            >
+              <h1 class="fuente1 display-4 fw-bold">
+                ¿Buscas una escapada perfecta?
+              </h1>
+              <h3 class="fuente-color">
+                Nosotros tenemos el destino ideal para ti.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon span-opacity-0"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden span-opacity-0">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon span-opacity-0"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden span-opacity-0">Next</span>
+        </button>
+      </div>
+    </header>
+    <div class="text-center m-5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ducimus ea
+      voluptas, repellendus odio, obcaecati distinctio, unde molestiae ipsa
+      voluptatum voluptatem sit. Dignissimos nesciunt, adipisci id eligendi fuga
+      culpa nam! Dolores cupiditate, beatae aliquid laborum tempora atque vero
+      illo? Autem ratione dolorem rem, perferendis delectus cumque magnam sequi
+      id vitae nisi voluptas provident distinctio qui quae quaerat. Quisquam,
+      esse mollitia? Voluptatibus aperiam dignissimos alias sit cupiditate modi
+      sed id, perferendis eos quo? Sunt incidunt iste fuga tempora praesentium,
+      explicabo modi a totam! Voluptatem rerum eligendi repudiandae quaerat
+      eius. Excepturi, voluptates? Pariatur neque nobis consectetur? Facilis
+      esse minima error id in facere sint obcaecati aliquid! Esse, repellat
+      pariatur tempore architecto consectetur minima cupiditate odit accusantium
+      obcaecati ex sequi, ut, maxime natus. Labore optio aliquid perspiciatis,
+      itaque, expedita possimus obcaecati accusantium ab illum quibusdam nemo
+      quo ut officiis suscipit beatae, consequuntur vitae autem fugiat cum
+      cumque sequi soluta? Pariatur eum labore nobis! Ad cum dicta aperiam nulla
+      cumque sit amet reiciendis voluptatum, sapiente perferendis esse dolorem
+      iste earum est reprehenderit quae eligendi provident a itaque autem
+      repellat, non unde quas. Quo, dolorum. Dolor expedita odio sit deleniti
+      corrupti, quam nam temporibus enim modi nisi dicta tenetur non maxime
+      nihil facilis maiores debitis ducimus totam doloremque. Ratione, odit
+      magnam. Consectetur vero distinctio vel. Ex necessitatibus, explicabo
+      illo, aut error et reiciendis nisi rerum minima rem nihil. Non ullam
+      beatae qui animi incidunt quas commodi delectus nulla cum consectetur
+      velit totam architecto, nisi distinctio! Sed distinctio molestias facere
+      quasi excepturi quo incidunt tempora? Eligendi hic eius consectetur alias
+      rerum magnam aliquam nisi iure aperiam, quo distinctio veritatis ratione.
+      Consectetur itaque illo illum quis nam? Quisquam, animi? Voluptates
+      accusantium excepturi qui consequatur ab odit quibusdam, similique ipsam,
+      expedita facilis eligendi voluptas fuga reiciendis nihil libero
+      consequuntur sint nisi blanditiis officiis asperiores veritatis deserunt.
+      Vitae, asperiores. Reprehenderit veritatis dignissimos adipisci magni ad
+      atque totam? Maiores, numquam assumenda? Nesciunt aliquam deleniti quaerat
+      culpa quod consequatur vel laudantium sint optio quia? Nobis odio
+      consequuntur ducimus iste nesciunt quasi? Perferendis, quasi eveniet
+      voluptatem ducimus, quo esse quibusdam nostrum accusamus, ullam quidem
+      autem id sequi sed deserunt. Nulla autem mollitia ipsum. Itaque accusamus
+      tempora, rem ipsa corrupti fugiat illo beatae. Quae delectus perspiciatis
+      culpa nemo ullam nesciunt suscipit recusandae deserunt dolore voluptatum
+      architecto, nam est facilis minima veritatis sequi blanditiis. Quos non a
+      neque aspernatur unde perferendis quod perspiciatis ducimus? Dolores
+      accusamus eum tenetur neque voluptatem recusandae optio exercitationem
+      tempora? Animi, nesciunt? Vero, sapiente! Vero praesentium numquam
+      cupiditate? Magnam placeat quo sequi laborum eos. Doloremque repellendus
+      earum laboriosam quis nihil. Veritatis, consectetur optio, voluptatibus
+      rerum doloremque, eveniet modi quis impedit blanditiis reprehenderit
+      soluta fugiat adipisci ad fugit pariatur consequuntur vero sunt quia est
+      inventore harum eius rem. Reiciendis, dicta praesentium. Quas a natus
+      libero vitae architecto tempora, recusandae similique ipsa at voluptatum
+      aspernatur eum officia, iusto in maiores veniam obcaecati reiciendis
+      accusamus eveniet dolorum repudiandae, eos quos sunt omnis. Quo? Sapiente
+      ea, expedita facilis minus excepturi odit tempora ad distinctio dicta
+      labore delectus est corporis consectetur. Reiciendis, inventore iste? Iste
+      at esse velit aliquid praesentium earum, quia quod beatae voluptas! Totam
+      voluptates ipsam voluptate blanditiis voluptatem quasi ratione omnis illum
+      tenetur minus cum natus incidunt soluta, temporibus eaque vitae expedita,
+      eos maiores molestias veritatis provident consectetur! Natus sequi culpa
+      ex. Nostrum distinctio tempore excepturi similique dolores? Amet sint
+      iusto ipsa error quos praesentium similique expedita, doloribus, corporis
+      natus animi ab dolorem nesciunt fugit maiores iure. Laboriosam enim
+      assumenda non praesentium? Itaque adipisci repudiandae quibusdam, a
+      provident nulla veritatis, pariatur excepturi culpa facilis distinctio.
+      Assumenda, in laborum tenetur earum magni accusantium blanditiis libero
+      fuga quisquam laudantium at quidem rerum maiores voluptas! Minus delectus
+      atque labore amet temporibus. Ex suscipit omnis hic non illum placeat sit
+      vero, quibusdam error excepturi qui sunt aperiam nesciunt quis officiis
+      ratione, dolor praesentium beatae. Quidem, ullam? Non doloribus debitis,
+      amet autem impedit quaerat itaque ipsa quo quasi rem architecto inventore
+      qui eius! Nam expedita est tenetur quasi corporis consequuntur sapiente
+      neque itaque fugit! Necessitatibus, dignissimos recusandae?
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="js/style.js"></script>
   </body>
 </html>
