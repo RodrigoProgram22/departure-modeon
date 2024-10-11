@@ -11,7 +11,7 @@ body {
   color: #4caf50;
 }
 #destinosimp {
-  scroll-margin-top: 5.4em;
+  scroll-margin-top: 6.6em;
 }
 #cruceros {
   scroll-margin-top: 5.4em;
@@ -34,6 +34,7 @@ a img {
 nav {
   transition: 0.7s;
 }
+
 @media screen and (max-width: 900px) {
   nav {
     background-color: rgba(0, 0, 0, 0.137);
@@ -50,6 +51,9 @@ nav {
   }
   .span-opacity-0 {
     opacity: 0%;
+  }
+  .display-4{
+    font-size: 22px;
   }
 }
 .btnNav:focus {
@@ -84,4 +88,11 @@ nav {
 }
 .btnNav:hover::before {
   width: 100%;
+}
+/*  */
+.imgSombra {
+  box-shadow: 0px 18px 25px;
+}
+.img-Imperdible {
+  object-fit: contain;
 }
