@@ -7,7 +7,7 @@
 .fuente-color {
   color: #4caf50;
 }
-.fuente-color2{
+.fuente-color2 {
   color: #0d1b2a;
 }
 #destinosimp {
@@ -19,16 +19,16 @@
 #masdestinos {
   scroll-margin-top: 6.4em;
 }
-#tipviaje {
-  scroll-margin-top: 5.4em;
+#tipviajes {
+  scroll-margin-top: 6.1em;
 }
 #contacto {
   scroll-margin-top: 5.4em;
 }
 /* Nav / Menu */
 a img {
-  width: 120px;
-  height: 70px;
+  width: 130px;
+  height: 80px;
   object-fit: contain;
 }
 nav {
@@ -52,7 +52,7 @@ nav {
   .span-opacity-0 {
     opacity: 0%;
   }
-  .display-4{
+  .display-4 {
     font-size: 22px;
   }
 }
@@ -94,5 +94,27 @@ nav {
   box-shadow: 0px 18px 25px;
 }
 .img-Imperdible {
+  object-fit: contain;
+}
+/* tips viajes */
+.lista {
+  list-style-type: none;
+  padding-left: 0;
+}
+.card-sombra{
+  box-shadow: 0px 18px 25px rgba(0, 0, 0, 0.226);
+}
+.card{
+  transition: 0.3s;
+}
+.card-header{
+ border: 0px solid;
+}
+.card:hover {
+  background-color: #17304b;
+}
+.png-tips{
+  width: 220px;
+  height: 170px;
   object-fit: contain;
 }
