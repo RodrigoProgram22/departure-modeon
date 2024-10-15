@@ -118,3 +118,31 @@ nav {
   height: 170px;
   object-fit: contain;
 }
+/* pie de pagina */
+a{
+  text-decoration: none;
+}
+.icon-footer {
+  font-size: 25px;
+  transition: all 0.5s;
+  color: #4caf50;
+}
+.icon-footer:hover {
+  color: #64ec68;
+  transform: scale(1.1);
+}
+.secundarioFooter {
+  color:#4caf50;
+  transition: all 0.5s;
+}
+.secundarioFooter:hover {
+  color: #64ec68;
+}
+.secundarioFooter:focus {
+  color: #64ec68;
+}
+.logo-footer{
+  width: 150px;
+  height: 90px;
+  object-fit: contain;
+}
