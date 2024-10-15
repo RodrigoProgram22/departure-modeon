@@ -34,28 +34,6 @@ a img {
 nav {
   transition: 0.7s;
 }
-
-@media screen and (max-width: 900px) {
-  nav {
-    background-color: rgba(0, 0, 0, 0.137);
-  }
-  a img {
-    width: 100px;
-    height: 50px;
-    object-fit: contain;
-  }
-  .centrarDispositivoPeque {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .span-opacity-0 {
-    opacity: 0%;
-  }
-  .display-4 {
-    font-size: 22px;
-  }
-}
 .btnNav:focus {
   color: #4caf50;
 }
@@ -96,30 +74,89 @@ nav {
 .img-Imperdible {
   object-fit: contain;
 }
-/* tips viajes */
+.tarjeta-destino {
+  transition: all 0.3s;
+}
+.tarjeta-destino:hover {
+  transform: translateY(-10px);
+}
+/* Cruceros */ 
+.btn {
+  outline: none;
+  display: inline-block;
+  border: 1px solid #4caf50;
+  padding: .8rem 2rem;
+  border-radius: 5px;
+  background: transparent;
+  color: #4caf50;
+  font-size: 1rem;
+  transition: .3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  border-top: 2px solid #0d1b2a;
+  border-left: 2px solid #0d1b2a;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  border-bottom: 2px solid #0d1b2a;
+  border-right: 2px solid #0d1b2a;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.btn:hover {
+  border: 1px solid #0d1b2a;
+  box-shadow: 4px 4px 10px rgb(184, 184, 184);
+  transform: translateY(-5px);
+}
+
+.btn:hover::after, .btn:hover::before {
+  height: 20px;
+  width: 20px;
+  opacity: 1;
+}
+
+/* Tips de Viajes */
 .lista {
   list-style-type: none;
   padding-left: 0;
 }
-.card-sombra{
+.card-sombra {
   box-shadow: 0px 18px 25px rgba(0, 0, 0, 0.226);
 }
-.card{
+.card {
   transition: 0.3s;
 }
-.card-header{
- border: 0px solid;
+.card-header {
+  border: 0px solid;
 }
 .card:hover {
   background-color: #17304b;
 }
-.png-tips{
+.png-tips {
   width: 220px;
   height: 170px;
   object-fit: contain;
 }
 /* pie de pagina */
-a{
+a {
   text-decoration: none;
 }
 .icon-footer {
@@ -132,7 +169,7 @@ a{
   transform: scale(1.1);
 }
 .secundarioFooter {
-  color:#4caf50;
+  color: #4caf50;
   transition: all 0.5s;
 }
 .secundarioFooter:hover {
@@ -141,8 +178,30 @@ a{
 .secundarioFooter:focus {
   color: #64ec68;
 }
-.logo-footer{
+.logo-footer {
   width: 150px;
   height: 90px;
   object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.137);
+  }
+  a img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+  }
+  .centrarDispositivoPeque {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .span-opacity-0 {
+    opacity: 0%;
+  }
+  .display-4 {
+    font-size: 22px;
+  }
 }
