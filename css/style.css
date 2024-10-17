@@ -147,9 +147,10 @@ nav {
 .card-header {
   border: 0px solid;
 }
+/*  
 .card:hover {
   background-color: #17304b;
-}
+} */
 .png-tips {
   width: 220px;
   height: 170px;
