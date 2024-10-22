@@ -24,18 +24,24 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/jpg" href="assets/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/jpg" href="assets/favicon.ico" />
     <title>Departure Mode ON</title>
   </head>
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-lg bg-transparent fixed-top align-items-center"
+        class="navbar navbar-expand-lg fondo-claro fixed-top align-items-center shadow"
       >
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="assets/logo.png" /></a>
+          <a class="navbar-brand" href="#"
+            ><img src="assets/header/logo.png"
+          /></a>
           <button
-            class="navbar-toggler navbar-dark text-light"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
@@ -43,7 +49,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list"></i>
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
@@ -60,20 +66,12 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link fw-bold btnNav" href="#destinosimp">
-                  Destinos Top
+                  Destinos Imperdibles
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link btnNav fw-bold" href="#cruceros">Cruceros</a>
               </li>
-              <!-- <li>
-                <a
-                  class="navbar-brand d-none d-lg-block d-xl-block d-xxl-block mx-0"
-                  href="#"
-                  ><img src="assets/logo.png"
-                /></a>
-              </li> -->
-
               <li class="nav-item">
                 <a class="nav-link btnNav fw-bold" href="#masdestinos">
                   Más destinos
@@ -91,6 +89,11 @@
               </li>
             </ul>
           </div>
+        </div>
+        <div
+          class="barra-progreso position-absolute top-100 start-50 translate-middle"
+        >
+          <div class="progreso" id="progress"></div>
         </div>
       </nav>
       <div id="inicio"></div>
@@ -127,9 +130,10 @@
             <div
               class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle"
             >
-              <h1 class="fuente2 display-4 fw-bold">
+              <h1 class="fuente1 display-4 fw-bold mb-4">
                 Explora nuevas sensaciones.
               </h1>
+              <a href="#destinosimp" class="btn-header">Ver Destinos</a>
             </div>
           </div>
           <div class="carousel-item position-relative">
@@ -137,9 +141,10 @@
             <div
               class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle"
             >
-              <h1 class="fuente2 display-4 fw-bold">
+              <h1 class="fuente1 display-4 fw-bold mb-4">
                 Aventurate a descubrir nuevos horizontes.
               </h1>
+              <a href="#destinosimp" class="btn-header">Ver Destinos</a>
             </div>
           </div>
           <div class="carousel-item position-relative">
@@ -147,9 +152,10 @@
             <div
               class="carousel-caption d-none d-md-block position-absolute top-50 start-50 translate-middle"
             >
-              <h1 class="fuente2 display-4 fw-bold">
+              <h1 class="fuente1 display-4 fw-bold mb-4">
                 Dejate atrapar por culturas fascinantes.
               </h1>
+              <a href="#destinosimp" class="btn-header">Ver Destinos</a>
             </div>
           </div>
         </div>
@@ -181,7 +187,7 @@
     </header>
     <section class="my-4" id="destinosimp">
       <div class="container text-center my-3">
-        <h2 class="fuente2 display-4 fw-bold fuente-color2">
+        <h2 class="fuente1 display-4 fw-bold fuente-color2">
           Destinos Imperdibles
         </h2>
       </div>
@@ -238,10 +244,10 @@
         </div>
       </div>
       <div class="container text-center my-3">
-        <h1 class="fuente2 display-4 fw-bold fuente-color2">
+        <h1 class="fuente1 display-4 fw-bold fuente-color2">
           Favoritos de EEUU
         </h1>
-        <h3 class="fuente-color fuente2">
+        <h3 class="fuente-color fuente1">
           Descubre lo mejor de Estados Unidos
         </h3>
       </div>
@@ -321,16 +327,9 @@
               vacacionales: desde las soleadas islas del Caribe hasta los
               antiguos templos en Asia.
             </p>
-            <!-- <p>
-              Los cruceros de Disney ofrecen la magia y el encanto de los
-              personajes Disney mientras recorren destinos como el Caribe,
-              Alaska, el Mediterráneo, e incluso el Pacífico Sur. Las familias
-              disfrutan de entretenimiento diseñado para todas las edades, con
-              zonas exclusivas para adultos y niños.
-            </p> -->
             <button class="btn fw-bold">Reserva Ahora</button>
           </div>
-          <div class="col">
+          <div class="col my-5">
             <div
               id="carouselExampleFade"
               class="carousel slide carousel-fade imgSombra"
@@ -384,10 +383,6 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <!-- <img
-              src="assets/cruceros/DISNEY CRUISLINE/istockphoto-969379612-1024x1024.jpg"
-              class="img-fluid imgSombra"
-            /> -->
           </div>
         </div>
         <hr class="m-5 d-md-none" />
@@ -448,10 +443,6 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <!-- <img
-              src="assets/cruceros/ROYAL CARIBBEAN/istockphoto-1357417042-1024x1024.jpg"
-              class="img-fluid imgSombra"
-            /> -->
           </div>
           <div class="col centrarDispositivoPeque">
             <p class="fuente-color fw-bold">DESTINO MÁS POPULAR</p>
@@ -467,14 +458,6 @@
               grandes espectáculos musicales, de comedia, acróbatas, juegos y
               mucho más A bordo la diversión no tiene límites.
             </p>
-            <!-- <p>
-              Royal Caribbean es conocida por ofrecer rutas a destinos como el
-              Caribe, Alaska, Europa y el Pacífico. Lo que destaca de esta línea
-              son sus innovadores barcos que cuentan con entretenimiento de
-              primer nivel, como simuladores de surf, tirolinas, pistas de
-              patinaje sobre hielo, y el famoso "Ultimate Abyss" (un tobogán
-              gigante).
-            </p> -->
             <button class="btn fw-bold">Reserva Ahora</button>
           </div>
         </div>
@@ -497,21 +480,9 @@
               Cay y no te pierdas el nuevo espectáculo de fuegos artificiales en
               altamar.
             </p>
-            <!-- <p>
-              Costa Cruceros ofrece una mezcla de estilo italiano y rutas que se
-              centran en Europa, principalmente en el Mediterráneo, las Islas
-              Griegas y el Norte de Europa. También cubre Asia y Sudamérica.
-              Costa ofrece una experiencia relajada y centrada en la cultura
-              europea, con buena gastronomía, entretenimiento y actividades para
-              todas las edades.
-            </p> -->
             <button class="btn fw-bold">Reserva Ahora</button>
           </div>
           <div class="col">
-            <!-- <img
-              src="assets/cruceros/COSTA CRUCEROS/istockphoto-1348842054-1024x1024.jpg"
-              class="img-fluid imgSombra"
-            /> -->
             <div
               id="carouselExampleFade2"
               class="carousel slide carousel-fade imgSombra"
@@ -572,7 +543,7 @@
     <section id="masdestinos">
       <div class="container p-3">
         <div class="container text-center my-3">
-          <h2 class="fuente2 display-4 fw-bold">Más Destinos</h2>
+          <h1 class="fuente1 display-4 fw-bold">Más Destinos</h1>
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4 mx-5 align-items-center">
           <div class="col">
@@ -663,145 +634,12 @@
           </div>
         </div>
       </div>
-      <!-- Más Destinos en Carrousel -->
-      <div
-        id="viajesCarousel"
-        class="carousel slide my-2 px-2"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col">
-                <div class="position-relative text-center">
-                  <img
-                    src="assets/masDestinos/coliseo2.jpg"
-                    class="img-fluid imgSombra"
-                  />
-                  <div
-                    class="container-fluid text-light position-absolute bottom-0 start-50 translate-middle-x"
-                  >
-                    <h6 class="fuente2 mb-0">Coliseo Romano</h6>
-                    <p class="d-none d-md-block">
-                      <i class="bi bi-geo-alt"></i> Roma, Italia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="position-relative text-center">
-                  <img
-                    src="assets/masDestinos/dubai2.jpg"
-                    class="img-fluid imgSombra"
-                  />
-                  <div
-                    class="container-fluid text-light position-absolute bottom-0 start-50 translate-middle-x"
-                  >
-                    <h6 class="fuente2 mb-0">Burj Khalifa</h6>
-                    <p class="d-none d-md-block">
-                      <i class="bi bi-geo-alt"></i> Dubai, United Arab Emirates.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="position-relative text-center">
-                  <img
-                    src="assets/masDestinos/santorini2.jpg"
-                    class="img-fluid imgSombra"
-                  />
-                  <div
-                    class="container-fluid text-light position-absolute bottom-0 start-50 translate-middle-x"
-                  >
-                    <h6 class="fuente2 mb-0">Santorini</h6>
-                    <p class="d-none d-md-block">
-                      <i class="bi bi-geo-alt"></i> Santorini, Grecia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Segunda fila de artículos -->
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col">
-                <div class="position-relative text-center">
-                  <img
-                    src="assets/masDestinos/tailandia2.jpg"
-                    class="img-fluid imgSombra"
-                  />
-                  <div
-                    class="container-fluid text-light position-absolute bottom-0 start-50 translate-middle-x"
-                  >
-                    <h6 class="fuente2 mb-0">Phuket</h6>
-                    <p class="d-none d-md-block">
-                      <i class="bi bi-geo-alt"></i> Phuket, Tailandia.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="position-relative text-center">
-                  <img
-                    src="assets/masDestinos/madrid4.jpg"
-                    class="img-fluid imgSombra"
-                  />
-                  <div
-                    class="container-fluid text-light position-absolute bottom-0 start-50 translate-middle-x"
-                  >
-                    <h6 class="fuente2 mb-0">Gran Vía</h6>
-                    <p class="d-none d-md-block">
-                      <i class="bi bi-geo-alt"></i> Madrid, España.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="position-relative text-center">
-                  <img
-                    src="assets/masDestinos/globos2.jpg"
-                    class="img-fluid imgSombra"
-                  />
-                  <div
-                    class="container-fluid text-light position-absolute bottom-0 start-50 translate-middle-x"
-                  >
-                    <h6 class="fuente2 mb-0">Capadoccia</h6>
-                    <p class="d-none d-md-block">
-                      <i class="bi bi-geo-alt"></i> Capadoccia, Turquía.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Controles para el carrusel -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#viajesCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#viajesCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
     </section>
     <section id="tipviajes" class="container">
       <div class="container text-start p-3">
-        <h2 class="text-center display-4 fuente2 fuente-color2">
+        <h1 class="text-center display-4 fuente1 fuente-color2">
           Tips de Viaje
-        </h2>
+        </h1>
       </div>
       <div class="row row-cols-1 row-cols-md-2 g-4 mx-5 align-items-center">
         <div class="col">
@@ -932,42 +770,62 @@
       </div>
     </section>
     <footer>
-      <div class="container-fluid fondo-dark text-white p-3">
+      <div class="container-fluid fondo-claro p-3 shadow-lg">
         <div class="row row-cols-1 row-cols-md-3 g-4 align-items-center">
           <div class="col text-center">
-            <div class="row g-4">
-              <div class="col">
-                <a href="https://departuremodeon.com/" target="_blank">
-                  <i class="bi bi-whatsapp icon-footer active"></i>
+            <div class="d-flex flex-row justify-content-center">
+              <div>
+                <a
+                  href="https://www.instagram.com/departuremodeon"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/footer/whatsapp.png"
+                    alt="whatsapp"
+                    class="img-fluid icon-footer"
+                  />
                 </a>
               </div>
-              <div class="col">
-                <a href="https://departuremodeon.com/" target="_blank">
-                  <i class="bi bi-instagram icon-footer active"></i>
+              <div class="mx-4">
+                <a
+                  href="https://www.instagram.com/departuremodeon"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/footer/instagram.png"
+                    alt="instagram"
+                    class="img-fluid icon-footer"
+                  />
                 </a>
               </div>
-              <div class="col">
+              <div>
                 <a
                   href="https://www.facebook.com/people/Departure-MODE-on/61566593750397/?mibextid=JRoKGi"
                   target="_blank"
                 >
-                  <i class="bi bi-facebook icon-footer active"></i>
+                  <img
+                    src="assets/footer/facebook.png"
+                    alt="facebook"
+                    class="img-fluid icon-footer"
+                  />
                 </a>
               </div>
             </div>
-            <p class="my-2 my-3">Mantente en al tanto de todas las novedades</p>
-            <p class="my-2">Siguenos en nuestras redes sociales</p>
+            <h5 class="my-2 my-3 fw-bold">
+              Mantente al tanto de todas las novedades
+            </h5>
+            <p class="my-2 fw-bold">¡Siguenos en nuestras redes sociales!</p>
           </div>
           <div class="col text-center">
             <img
-              src="assets/logo.png"
-              class="img-fluid logo-footer"
+              src="assets/header/logo.png"
+              class="img-fluid logo-footer mb-3"
               alt="Departure MODE ON"
             />
             <p>info@departuremodeon.com</p>
             <p>+1 (786) 6892203</p>
           </div>
-          <div class="col text-center">
+          <div class="col text-center fuente2">
             <div class="container my-2">
               <a class="my-1 btnNav active py-1" href="#"> Inicio </a>
             </div>

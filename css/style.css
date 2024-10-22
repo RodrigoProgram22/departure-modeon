@@ -1,11 +1,14 @@
 .fondo-dark {
   background-color: #0d1b2a;
 }
+.fondo-claro{
+  background-color: #fff;
+}
 .fuente1 {
   font-family: "Montserrat", sans-serif;
 }
-.fuente2{
-  font-family: 'Manrope', sans-serif;
+.fuente2 {
+  font-family: "Manrope", sans-serif;
 }
 .fuente-color {
   color: #4caf50;
@@ -28,6 +31,17 @@
 #contacto {
   scroll-margin-top: 5.4em;
 }
+/* barra de progreso */
+.barra-progreso {
+  position: fixed;
+  width: 100%;
+  height: 3px;
+}
+.progreso {
+  width: 0%;
+  height: 100%;
+  background-color: #4caf50;
+}
 /* Nav / Menu */
 a img {
   width: 150px;
@@ -37,15 +51,15 @@ a img {
 nav {
   transition: 0.7s;
 }
-.btnNav:focus {
-  color: #4caf50;
+button i {
+  font-size: 50px;
 }
 /* Animaciones al nav */
-
 .btnNav {
+  font-size: 20px;
   margin: 0.5em;
   background: transparent;
-  color: white;
+  color: #000;
   border: none;
   /* border-radius: 1.625em; */
   font-weight: bold;
@@ -55,7 +69,7 @@ nav {
   overflow: hidden;
 }
 .btnNav:hover {
-  color: white;
+  color: #4caf50;
 }
 .btnNav::before {
   content: "";
@@ -69,6 +83,36 @@ nav {
 }
 .btnNav:hover::before {
   width: 100%;
+}
+.btnNav:focus {
+  color: #4caf50;
+}
+/* header */
+.btn-header {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 15px 20px rgba(46, 229, 156, 0.136);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-header:hover {
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.712);
+  transform: translateY(-7px);
+}
+
+.btn-header:active {
+  transform: translateY(-1px);
 }
 /* Destinos Imperdibles */
 .imgSombra {
@@ -104,21 +148,21 @@ nav {
   background-color: #4caf50;
   box-shadow: 0px 15px 20px #4caf4f9d;
   color: #fff;
-  transform: translateY(-7px);
   border: 1px solid #4caf50;
+  transform: translateY(-7px);
 }
 .btn:active {
   transform: translateY(-1px);
 }
 /* Más Destinos */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.iconFondo,
+.iconFondo {
   background-color: #0d1b2a;
   transition: all 0.3s;
   border-radius: 50%;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon:hover {
+.iconFondo,
+.iconFondo:hover {
   transform: translateY(-10px);
 }
 /* Tips de Viajes */
@@ -149,10 +193,12 @@ a {
   text-decoration: none;
 }
 .icon-footer {
-  font-size: 25px;
+  width: 60px;
+  object-fit: contain;
   transition: all 0.5s;
-  color: #4caf50;
+  color: #fff;
 }
+
 .icon-footer:hover {
   color: #64ec68;
   transform: scale(1.1);
