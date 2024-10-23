@@ -2,7 +2,7 @@
   background-color: #0d1b2a;
 }
 .fondo-claro{
-  background-color: #fff;
+  background-color: #4caf50;
 }
 .fuente1 {
   font-family: "Montserrat", sans-serif;
@@ -44,7 +44,7 @@
 }
 /* Nav / Menu */
 a img {
-  width: 150px;
+  width: 130px;
   height: 80px;
   object-fit: contain;
 }
