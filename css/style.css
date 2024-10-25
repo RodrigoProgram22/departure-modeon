@@ -1,8 +1,9 @@
-.fondo-dark {
-  background-color: #0d1b2a;
+:root {
+  --primario: #4caf50;
+  --secundario: #9a68c8;
 }
 .fondo-claro {
-  background-color: #4caf50;
+  background-color: var(--primario);
 }
 .fuente1 {
   font-family: "Montserrat", sans-serif;
@@ -10,11 +11,17 @@
 .fuente2 {
   font-family: "Manrope", sans-serif;
 }
+.fuente3 {
+  font-family: "Tangerine", cursive;
+}
 .fuente-color {
-  color: #4caf50;
+  color: var(--primario);
 }
 .fuente-color2 {
   color: #0d1b2a;
+}
+.fuente-color3 {
+  color: var(--secundario);
 }
 #destinosimp {
   scroll-margin-top: 6.6em;
@@ -58,13 +65,13 @@ button i {
   overflow: hidden;
 }
 .btnNav:hover {
-  color: #4caf50;
+  color: var(--primario);
 }
 .btnNav::before {
   content: "";
   width: 0%;
   height: 3px;
-  background: #4caf50;
+  background: var(--primario);
   position: absolute;
   transition: all 0.5s;
   left: 0;
@@ -74,35 +81,9 @@ button i {
   width: 100%;
 }
 .btnNav:focus {
-  color: #4caf50;
-}
-/* header */
-.btn-header {
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #fff;
-  background-color: #4caf50;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 15px 20px rgba(46, 229, 156, 0.136);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
+  color: var(--primario);
 }
 
-.btn-header:hover {
-  color: #000;
-  background-color: #fff;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.712);
-  transform: translateY(-7px);
-}
-
-.btn-header:active {
-  transform: translateY(-1px);
-}
 /* Destinos Imperdibles */
 .imgSombra {
   box-shadow: 0px 18px 25px;
@@ -123,9 +104,8 @@ button i {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: 1px solid #000;
+  color: #fff;
+  background-color: var(--primario);
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
@@ -134,10 +114,10 @@ button i {
 }
 
 .btn:hover {
-  background-color: #4caf50;
-  box-shadow: 0px 15px 20px #4caf4f9d;
+  background-color: var(--secundario);
+  box-shadow: 0px 15px 20px #9d4caf9d;
   color: #fff;
-  border: 1px solid #4caf50;
+  border: 1px solid var(--secundario);
   transform: translateY(-7px);
 }
 .btn:active {
@@ -167,8 +147,8 @@ button i {
 }
 .card-viajes {
   /* background-color: #0d1b2a; */
-  border-radius: 10px;
   /* background: #0d1b2acb; */
+  border-radius: 10px;
   background: rgba(223, 208, 208, 0.147);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(7px);
@@ -203,12 +183,17 @@ button i {
 }
 
 .card-formulario {
-  background-color: #64ec68;
-  border-radius: 10px;
   padding: 20px;
   width: 350px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  background: rgba(223, 208, 208, 0.147);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
 }
 .title {
   font-size: 24px;
@@ -231,7 +216,7 @@ button i {
   position: absolute;
   top: -10px;
   left: 10px;
-  background-color: #64ec68;
+  background-color: rgba(223, 208, 208, 0.147);
   transition: all 0.3s ease;
 }
 
@@ -261,7 +246,7 @@ button i {
 .form .group textarea:focus + label {
   top: -10px;
   left: 10px;
-  background-color: #64ec68;
+  background-color: rgba(223, 208, 208, 0);
   font-weight: 600;
   font-size: 14px;
 }
@@ -271,21 +256,19 @@ button i {
   height: 100px;
 }
 
-.form button {
-  background-color: #010101;
+.form-button {
+  background-color: var(--primario);
   color: #fff;
-  border: solid 2px black;
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
+  border: none;
 }
 
-.form button:hover {
-  background-color: #64ec68;
-  color: black;
-  border: solid 2px black;
+.form-button:hover {
+  background-color: var(--secundario);
 }
 /* pie de pagina */
 a {
@@ -303,7 +286,7 @@ a {
   transform: scale(1.1);
 }
 .secundarioFooter {
-  color: #4caf50;
+  color: var(--primario);
   transition: all 0.5s;
 }
 .secundarioFooter:hover {

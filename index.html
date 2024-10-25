@@ -20,6 +20,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <!-- Fuentes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -27,6 +28,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap"
     />
     <link rel="icon" type="image/jpg" href="assets/favicon.ico" />
     <title>Departure Mode ON</title>
@@ -84,7 +89,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link btnNav fw-bold" href="#contacto">
-                  Contácto
+                  Contacto
                 </a>
               </li>
             </ul>
@@ -122,48 +127,48 @@
           <div class="carousel-item active position-relative">
             <img src="assets/header/ejemplo.jpg" class="d-block w-100" />
             <div
-              class="carousel-caption text-start d-none d-md-block align-content-center position-absolute top-0 start-25"
+              class="carousel-caption text-center d-none d-md-block align-content-center position-absolute top-0 start-50"
             >
               <div class="row">
+                <div class="col"></div>
                 <div class="col">
                   <h1 class="fuente1 display-4 fw-bold mb-4">
-                    Explora nuevas sensaciones.
+                    Explora nuevas sensaciones
                   </h1>
-                  <a href="#destinosimp" class="btn-header">Ver Destinos</a>
+                  <a href="#destinosimp" class="btn">Ver Destinos</a>
                 </div>
-                <div class="col"></div>
               </div>
             </div>
           </div>
           <div class="carousel-item position-relative">
-            <img src="assets/header/ejemplo2.jpg" class="d-block w-100" />
+            <img src="assets/header/ejemplo696.jpg" class="d-block w-100" />
             <div
-              class="carousel-caption text-start d-none d-md-block align-content-center position-absolute top-0 start-25"
+              class="carousel-caption text-center d-none d-md-block align-content-center position-absolute top-50 start-50 translate-middle"
             >
-              <div class="row">
+              <h1 class="fuente1 display-4 fw-bold mb-4">
+                Aventurate a descubrir nuevos horizontes
+              </h1>
+              <a href="#destinosimp" class="btn">Ver Destinos</a>
+              <!-- <div class="row">
                 <div class="col">
-                  <h1 class="fuente1 display-4 fw-bold mb-4">
-                    Aventurate a descubrir nuevos horizontes.
-                  </h1>
-                  <a href="#destinosimp" class="btn-header">Ver Destinos</a>
                 </div>
                 <div class="col"></div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="carousel-item position-relative">
-            <img src="assets/header/ejemplo3.jpg" class="d-block w-100" />
+            <img src="assets/header/ejemplo30.jpg" class="d-block w-100" />
             <div
-              class="carousel-caption text-start d-none d-md-block align-content-center position-absolute top-0 start-25"
+              class="carousel-caption text-end d-none d-md-block align-content-center position-absolute top-0 start-50"
             >
               <div class="row">
+                <div class="col"></div>
                 <div class="col">
                   <h1 class="fuente1 display-4 fw-bold mb-4">
-                    Dejate atrapar por culturas fascinantes.
+                    Dejate atrapar por culturas fascinantes
                   </h1>
-                  <a href="#destinosimp" class="btn-header">Ver Destinos</a>
+                  <a href="#destinosimp" class="btn">Ver Destinos</a>
                 </div>
-                <div class="col"></div>
               </div>
             </div>
           </div>
@@ -196,7 +201,7 @@
     </header>
     <section class="my-4" id="destinosimp">
       <div class="container text-center my-3">
-        <h2 class="fuente1 display-4 fw-bold fuente-color2">
+        <h2 class="fuente1 display-3 fw-bold fuente-color3">
           Destinos Imperdibles
         </h2>
       </div>
@@ -253,15 +258,15 @@
         </div>
       </div>
       <div class="container text-center my-3">
-        <h1 class="fuente1 display-4 fw-bold fuente-color2">
+        <h1 class="fuente1 display-3 fw-bold fuente-color3">
           Favoritos de EEUU
         </h1>
-        <h3 class="fuente-color fuente1">
-          Descubre lo mejor de Estados Unidos
-        </h3>
+        <h3 class="fuente3 display-2 fuente-color2">Sitios más populares</h3>
       </div>
       <div class="container p-3">
-        <div class="row row-cols-1 row-cols-md-3 g-4 mx-5 align-items-center">
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4 mx-5 align-items-center"
+        >
           <div class="col">
             <div class="position-relative text-center tarjeta-destino">
               <i
@@ -313,6 +318,23 @@
               </div>
             </div>
           </div>
+          <div class="col">
+            <div class="position-relative text-center tarjeta-destino">
+              <i
+                class="bi bi-heart-fill fs-3 position-absolute top-0 end-0 p-2 text-danger"
+              ></i>
+              <img
+                src="assets/masDestinos/favoritosEEUU/sanfrancisco1.jpg"
+                class="img-fluid imgSombra"
+              />
+              <div
+                class="container-fluid text-light position-absolute bottom-0 start-50 translate-middle-x"
+              >
+                <p class="fuente2 fw-bold mb-0">Puente Golden Gate</p>
+                <p><i class="bi bi-geo-alt"></i> San Francisco, EEUU.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -322,7 +344,7 @@
           class="row row-cols-1 row-cols-md-2 g-4 align-items-center justify-content-center my-2"
         >
           <div class="col centrarDispositivoPeque">
-            <p class="fuente-color fw-bold">VIAJE LLENO DE FANTASIA</p>
+            <p class="fuente-color3 fw-bold">VIAJE LLENO DE FANTASIA</p>
             <h2 class="fuente2 fw-bold fuente-color2">Disney Cruise Line</h2>
             <p>
               No te pierdas la experiencia única de navegar en sus
@@ -454,7 +476,7 @@
             </div>
           </div>
           <div class="col centrarDispositivoPeque">
-            <p class="fuente-color fw-bold">DESTINO MÁS POPULAR</p>
+            <p class="fuente-color3 fw-bold">DESTINO MÁS POPULAR</p>
             <h2 class="fuente2 fw-bold fuente-color2">Royal Caribbean</h2>
             <p>
               Te invitamos a ser parte de una aventura emocionante a bordo de un
@@ -475,7 +497,7 @@
           class="row row-cols-1 row-cols-md-2 g-4 align-items-center justify-content-center my-2"
         >
           <div class="col centrarDispositivoPeque">
-            <p class="fuente-color fw-bold">DESTACADOS</p>
+            <p class="fuente-color3 fw-bold">DESTACADOS</p>
             <h2 class="fuente2 fuente-color2 fw-bold">Costa Cruceros</h2>
             <p>
               Embárcate en un viaje inolvidable a bordo de uno de los 6 barcos
@@ -551,13 +573,13 @@
     </section>
     <section id="tipviajes">
       <div class="container p-3">
-        <h1 class="text-center display-4 fuente1 text-dark fw-bold">
-          Viaja Inteligente: Los Mejores Tips para Ti
+        <h1 class="text-center display-5 fuente1 fw-bold fuente-color3">
+          A LA HORA DE TU VIAJE TE SUGERIMOS...
         </h1>
       </div>
       <div class="fondo-tips">
         <div
-          class="row row-cols-2 row-cols-md-4 g-1 mx-5 align-items-center text-dark"
+          class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-1 mx-5 align-items-center text-dark"
         >
           <div class="col bg-transparent mb-3 text-center p-4">
             <div class="card-viajes">
@@ -591,7 +613,7 @@
                 <img src="assets/tips/Documents-amico.png" class="png-tips" />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Documentos al día.</h5>
+                <h5 class="card-title">Documentos al día</h5>
                 <p class="card-text">
                   Asegúrate de tener pasaporte, visa y boletos listos.
                 </p>
@@ -604,7 +626,7 @@
                 <img src="assets/tips/Airport-pana.png" class="png-tips" />
               </div>
               <div class="card-body">
-                <h5 class="card-title">Equipaje liviano.</h5>
+                <h5 class="card-title">Equipaje liviano</h5>
                 <p class="card-text">
                   Usa ropa cómoda y lleva solo un equipaje de mano liviano.
                 </p>
@@ -643,7 +665,7 @@
     <section id="masdestinos">
       <div class="container p-3">
         <div class="container text-center my-3">
-          <h1 class="fuente1 display-4 fw-bold">Más Destinos</h1>
+          <h1 class="fuente1 display-4 fw-bold fuente-color3">Más Destinos</h1>
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4 mx-5 align-items-center">
           <div class="col">
@@ -737,22 +759,30 @@
     </section>
     <section id="contacto">
       <div class="d-flex justify-content-center fondo-formulario p-4 my-2">
-        <div class="row row-cols-1 row-cols-md-2 g-5 my-2">
+        <div class="row row-cols-1 row-cols-md-2 g-5 my-2 align-content-center"> 
           <div
-            class="col d-flex flex-column justify-content-center align-items-start bg-light p-4 rounded"
+            class="col d-flex flex-column justify-content-center align-items-start p-4 card-viajes"
           >
-            <h3 class="mb-4 text-dark fuente2">Contáctanos</h3>
+            <h3 class="mb-4 fuente-color3 fuente2">Contáctanos</h3>
 
             <!-- Teléfono -->
             <div class="mb-4 text-dark">
-              <i class="bi bi-telephone-fill"></i> Teléfono:
+              <i class="bi bi-telephone-fill fuente-color me-2"></i> Teléfono:
               <a href="tel:+17866892203" class="text-decoration-none text-dark"
                 >+1 (786) 6892203</a
               >
             </div>
             <!-- Email -->
             <div class="mb-4 text-dark">
-              <i class="bi bi-envelope-fill"></i> Email:
+              <i class="bi bi-envelope-fill fuente-color me-2"></i> Email:
+              <a
+                href="mailto:info@departuremodeon.com"
+                class="text-decoration-none text-dark"
+                >info@departuremodeon.com</a
+              >
+            </div>
+            <div class="mb-4 text-dark">
+              <i class="bi bi-envelope-fill fuente-color me-2"></i> Email:
               <a
                 href="mailto:info@departuremodeon.com"
                 class="text-decoration-none text-dark"
@@ -761,23 +791,28 @@
             </div>
             <!-- Horario de Atención -->
             <div class="mb-4">
-              <i class="bi bi-clock-fill"></i> Horarios de Atención:
-              <ul class=" mb-0">
+              <i class="bi bi-clock-fill fuente-color me-2"></i> Horarios de
+              Atención:
+              <ul class="mb-0">
                 <li>Lunes a Viernes: 9:00 AM - 6:00 PM</li>
                 <li>Sábados: 10:00 AM - 2:00 PM</li>
                 <li>Domingos: Cerrado</li>
               </ul>
             </div>
-            <div class="mx-auto">
-              <button class="btn fw-bold">Enviar whatsapp</button>
+            <div class="mb-4">
+              <i class="bi bi-clock-fill fuente-color me-2"></i> 24/7 Disponible
+              en Whatsapp.
             </div>
+            <button class="form-button fw-bold w-100">ENVIAR WHATSAPP</button>
           </div>
           <div class="col d-flex justify-content-center">
             <div class="card-formulario">
-              <span class="title fuente2">Consulta por viajes</span>
+              <h3 class="fuente2 text-start fuente-color3">
+                Consulta por viajes
+              </h3>
               <form
                 class="form"
-                action="https://formsubmit.co/rodrigoprograma22@gmail.com"
+                action="https://formsubmit.co/roodrigoo343@gmail.com"
                 method="POST"
               >
                 <div class="group">
@@ -820,15 +855,16 @@
                   ></textarea>
                   <label for="comment">Mensaje</label>
                 </div>
-                <button type="submit">Enviar formulario</button>
-                <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500" /> -->
                 <input
                   type="hidden"
                   name="_next"
                   value="http://127.0.0.1:5500"
                 />
-                <input type="hidden" name="_captcha" value="true" />
+                <input type="hidden" name="_captcha" value="false" />
               </form>
+              <button type="submit" class="form-button fw-bold">
+                ENVIAR MENSAJE
+              </button>
             </div>
           </div>
         </div>
@@ -876,10 +912,7 @@
                 </a>
               </div>
             </div>
-            <h5 class="my-2 my-3 fw-bold">
-              Mantente al tanto de todas las novedades
-            </h5>
-            <p class="my-2 fw-bold">¡Siguenos en nuestras redes sociales!</p>
+            <h5 class="my-2 my-3 fw-bold">¡Enterate de todas las novedades!</h5>
           </div>
           <div class="col text-center">
             <img
