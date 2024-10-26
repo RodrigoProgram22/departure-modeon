@@ -149,7 +149,7 @@ button i {
   /* background-color: #0d1b2a; */
   /* background: #0d1b2acb; */
   border-radius: 10px;
-  background: rgba(223, 208, 208, 0.147);
+  background: rgba(223, 208, 208, 0.493);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
@@ -184,16 +184,15 @@ button i {
 
 .card-formulario {
   padding: 20px;
-  width: 350px;
+  /* width: 850px; */
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background: rgba(223, 208, 208, 0.147);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(7px);
+  background: rgba(255, 255, 255, 0.699);
+  box-shadow: 0 8px 32px 0 rgba(156, 159, 207, 0.37);
+  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(7px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-
 }
 .title {
   font-size: 24px;
@@ -219,36 +218,32 @@ button i {
   background-color: rgba(223, 208, 208, 0.147);
   transition: all 0.3s ease;
 }
-
-.form .group input,
-.form .group textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-  outline: 0;
-  width: 100%;
+.input {
+  line-height: 28px;
+  border: 2px solid transparent;
+  border-bottom-color: #4caf50;
+  padding: 0.2rem 0;
+  outline: none;
   background-color: transparent;
+  color: #000000;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.form .group input:placeholder-shown + label,
-.form .group textarea:placeholder-shown + label {
-  top: 10px;
-  background-color: transparent;
+.input:focus,
+input:hover {
+  outline: none;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  border-color: var(--secundario);
 }
 
-.form .group input:focus,
-.form .group textarea:focus {
-  border-color: black;
+.input::placeholder {
+  color: #000;
 }
 
-.form .group input:focus + label,
-.form .group textarea:focus + label {
-  top: -10px;
-  left: 10px;
-  background-color: rgba(223, 208, 208, 0);
-  font-weight: 600;
-  font-size: 14px;
+.input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .form .group textarea {
@@ -257,18 +252,30 @@ button i {
 }
 
 .form-button {
-  background-color: var(--primario);
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  --c1: #c691f8;
+  --c2: #b43bff;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background: linear-gradient(
+      90deg,
+      var(--c1, #f6d365),
+      var(--c2, #fda085) 51%,
+      var(--c1, #f6d365)
+    )
+    var(--x, 0) / 200%;
+  color: white;
   border: none;
+  border-radius: 20px;
+  outline: none;
 }
 
 .form-button:hover {
-  background-color: var(--secundario);
+  --x: 100%;
+}
+.form-button:active {
+  scale: 0.95;
 }
 /* pie de pagina */
 a {
