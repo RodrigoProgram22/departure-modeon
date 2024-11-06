@@ -86,7 +86,7 @@ button i {
 
 /* Destinos Imperdibles */
 .imgSombra {
-  box-shadow: 0px 18px 25px;
+  box-shadow: 0px 10px 20px;
 }
 .img-Imperdible {
   object-fit: contain;
@@ -98,6 +98,9 @@ button i {
   transform: translateY(-10px);
 }
 /* Cruceros */
+.rounded-cruceros{
+  border-radius: 10px;
+}
 .btn {
   padding: 1.3em 3em;
   font-size: 12px;
@@ -137,7 +140,7 @@ button i {
 /* Tips de Viajes */
 .fondo-tips {
   /* background-color: #306ba9; */
-  background-image: url("../assets/header/playa.jpg");
+  background-image: url("../assets/header/fondo-playa.jpg");
   /* background-image: url('../assets/tips/ia3.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -174,7 +177,7 @@ button i {
 /* Seccion de Contactos */
 .fondo-formulario {
   /* background-color: #4caf50; */
-  background-image: url("../assets/header/playa.jpg");
+  background-image: url("../assets/header/fondo-playa.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -276,6 +279,15 @@ input:hover {
 }
 .form-button:active {
   scale: 0.95;
+}
+.borde-titulo{
+  border: 3px solid var(--secundario); /* Cambia el color y grosor del borde según prefieras */
+  border-radius: 15px; /* Ajusta este valor para el redondeo deseado */
+  padding: 10px; /* Espacio entre el texto y el borde */
+  display: inline-block; /* Esto permite que el borde solo abarque el texto */
+}
+.contacto-letra{
+  font-size: 18px;
 }
 /* pie de pagina */
 a {
