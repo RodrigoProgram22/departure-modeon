@@ -24,19 +24,19 @@
   color: var(--secundario);
 }
 #destinosimp {
-  scroll-margin-top: 6.6em;
+  scroll-margin-top: 7.8em;
 }
 #cruceros {
-  scroll-margin-top: 5.4em;
+  scroll-margin-top: 7.8em;
 }
 #masdestinos {
-  scroll-margin-top: 6.4em;
+  scroll-margin-top: 7.5em;
 }
 #tipviajes {
-  scroll-margin-top: 6.1em;
+  scroll-margin-top: 7.8em;
 }
 #contacto {
-  scroll-margin-top: 5.4em;
+  scroll-margin-top:  7.5em;
 }
 /* Nav / Menu */
 a img {
@@ -325,8 +325,8 @@ a {
     background-color: rgba(0, 0, 0, 0.137);
   }
   a img {
-    width: 150px;
-    height: 90px;
+    width: 90px;
+    height: 50px;
     object-fit: contain;
   }
   .centrarDispositivoPeque {
@@ -337,7 +337,10 @@ a {
   .span-opacity-0 {
     opacity: 0%;
   }
-  .display-4 {
+  .display-3 {
+    font-size: 22px;
+  }
+  .display-5{
     font-size: 22px;
   }
 }
