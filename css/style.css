@@ -281,10 +281,10 @@ input:hover {
   scale: 0.95;
 }
 .borde-titulo{
-  border: 3px solid var(--secundario); /* Cambia el color y grosor del borde según prefieras */
-  border-radius: 15px; /* Ajusta este valor para el redondeo deseado */
-  padding: 10px; /* Espacio entre el texto y el borde */
-  display: inline-block; /* Esto permite que el borde solo abarque el texto */
+  border: 3px solid var(--secundario);
+  border-radius: 15px; 
+  padding: 10px; 
+  display: inline-block; 
 }
 .contacto-letra{
   font-size: 18px;
@@ -292,6 +292,10 @@ input:hover {
 /* pie de pagina */
 a {
   text-decoration: none;
+  transition: 0.5s;
+}
+.tyc:hover{
+  color: var(--secundario);
 }
 .icon-footer {
   width: 50px;
