@@ -36,7 +36,7 @@
   scroll-margin-top: 7.8em;
 }
 #contacto {
-  scroll-margin-top:  7.5em;
+  scroll-margin-top: 7.5em;
 }
 /* Nav / Menu */
 a img {
@@ -98,11 +98,11 @@ button i {
   transform: translateY(-10px);
 }
 /* Cruceros */
-.rounded-cruceros{
+.rounded-cruceros {
   border-radius: 10px;
 }
 .btn {
-  padding: 1.0em 2em;
+  padding: 1em 2em;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -225,6 +225,7 @@ button i {
   border: 2px solid transparent;
   border-bottom-color: #4caf50;
   padding: 0.2rem 0;
+  margin: 10px 0px;
   outline: none;
   background-color: transparent;
   color: #000000;
@@ -280,25 +281,28 @@ input:hover {
 .form-button:active {
   scale: 0.95;
 }
-.borde-titulo{
-  font-size:20px;
+.borde-titulo {
+  font-size: 20px;
   border: 3px solid var(--secundario);
-  border-radius: 15px; 
-  padding: 10px; 
-  display: inline-block; 
+  border-radius: 15px;
+  padding: 10px;
+  display: inline-block;
 }
-.contacto-letra{
-  font-size: 15px;
+.contacto-letra {
+  font-size: 13px;
 }
-textarea{
+textarea {
   margin-bottom: 12px;
+}
+.enviar-wsp {
+  margin-top: 5px;
 }
 /* pie de pagina */
 a {
   text-decoration: none;
   transition: 0.5s;
 }
-.tyc:hover{
+.tyc:hover {
   color: var(--secundario);
 }
 .icon-footer {
@@ -307,7 +311,10 @@ a {
   transition: all 0.5s;
   color: #fff;
 }
-
+.footer-list a {
+  text-decoration: none;
+  font-size: 15px;
+}
 .icon-footer:hover {
   color: #64ec68;
   transform: scale(1.1);
@@ -323,11 +330,16 @@ a {
   color: #64ec68;
 }
 .logo-footer {
-  width: 100px;
+  width: 80px;
   object-fit: contain;
 }
-
-@media screen and (max-width: 900px) {
+footer {
+  font-size: 13px;
+}
+footer .btnNav {
+  font-size: 13px;
+}
+@media screen and (max-width: 768px) {
   nav {
     background-color: rgba(0, 0, 0, 0.137);
   }
@@ -336,7 +348,7 @@ a {
     height: 50px;
     object-fit: contain;
   }
-  .carousel{
+  .carousel {
     margin-top: 50px;
   }
   .centrarDispositivoPeque {
@@ -350,7 +362,60 @@ a {
   .display-3 {
     font-size: 32px;
   }
-  .display-5{
+  .display-5 {
     font-size: 25px;
+  }
+  /* cruceros */
+  
+  /* contacto */
+  .form {
+    margin: 15px;
+  }
+  .card-formulario {
+    margin: 10px;
+  }
+  .form-button {
+    margin: 0px;
+  }
+  .enviar-wsp {
+    margin-top: 5px;
+  }
+  .enviar-wsp div {
+    width: 120px;
+  }
+  .contacto-letra {
+    font-size: 9px;
+  }
+  .borde-titulo {
+    font-size: 17px;
+    border: 1px solid var(--secundario);
+    margin-bottom: 0px;
+  }
+  .seccion-cotiza {
+    margin-top: 10px;
+  }
+  .form-button {
+    width: 120px;
+    font-size: 8px;
+  }
+  .form .group textarea {
+    resize: none;
+    height: 55px;
+  }
+  /* footer */
+  footer {
+    font-size: 10px;
+  }
+  .icon-footer {
+    width: 20px;
+    object-fit: contain;
+    transition: all 0.5s;
+  }
+  .logo-footer {
+    width: 50px;
+    object-fit: contain;
+  }
+  footer .btnNav {
+    font-size: 10px;
   }
 }
