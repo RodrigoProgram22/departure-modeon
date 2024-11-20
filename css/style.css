@@ -365,11 +365,9 @@ footer .btnNav {
   .display-5 {
     font-size: 25px;
   }
-  /* cruceros */
-  
   /* contacto */
   .form {
-    margin: 15px;
+    margin: 1px;
   }
   .card-formulario {
     margin: 10px;
@@ -384,7 +382,10 @@ footer .btnNav {
     width: 120px;
   }
   .contacto-letra {
-    font-size: 9px;
+    font-size: 13px;
+  }
+  .telefono{
+    font-size: 13px;
   }
   .borde-titulo {
     font-size: 17px;
@@ -402,8 +403,12 @@ footer .btnNav {
     resize: none;
     height: 55px;
   }
+  ul{
+    padding: 0px 0px 0px 15px;
+  }
   /* footer */
   footer {
+    padding-top: 25px ;
     font-size: 10px;
   }
   .icon-footer {
