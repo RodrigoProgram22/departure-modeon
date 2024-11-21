@@ -183,6 +183,7 @@ button i {
   background-position: center center;
   background-attachment: fixed;
   object-fit: contain;
+  padding: 20px 0px 20px 0px;
 }
 
 .card-formulario {
@@ -366,6 +367,10 @@ footer .btnNav {
     font-size: 25px;
   }
   /* contacto */
+  .fondo-formulario{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
   .form {
     margin: 1px;
   }
@@ -381,11 +386,8 @@ footer .btnNav {
   .enviar-wsp div {
     width: 120px;
   }
-  .contacto-letra {
-    font-size: 13px;
-  }
-  .telefono{
-    font-size: 13px;
+  .contacto-letra{
+    font-size: 11px;
   }
   .borde-titulo {
     font-size: 17px;
@@ -424,3 +426,30 @@ footer .btnNav {
     font-size: 10px;
   }
 }
+@media screen and (max-width: 450px) {
+/* contacto */
+.fondo-formulario{
+  padding: 6px;
+}
+.contacto-letra {
+  font-size: 9px;
+}
+}
+@media screen and (max-width: 310px) {
+  /* contacto */
+  .fondo-formulario{
+    padding: 6px;
+  }
+  .contacto-letra {
+    font-size: 8px;
+  }
+  }
+  @media screen and (max-width: 270px) {
+    /* contacto */
+    .fondo-formulario{
+      padding: 6px;
+    }
+    .contacto-letra {
+      font-size: 6px;
+    }
+    }
