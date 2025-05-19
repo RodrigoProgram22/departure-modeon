@@ -334,6 +334,10 @@ a {
   width: 80px;
   object-fit: contain;
 }
+.logo-certificado {
+  width: 180px;
+  object-fit: contain;
+}
 footer {
   font-size: 13px;
 }
@@ -367,7 +371,7 @@ footer .btnNav {
     font-size: 25px;
   }
   /* contacto */
-  .fondo-formulario{
+  .fondo-formulario {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
   }
@@ -386,7 +390,7 @@ footer .btnNav {
   .enviar-wsp div {
     width: 120px;
   }
-  .contacto-letra{
+  .contacto-letra {
     font-size: 11px;
   }
   .borde-titulo {
@@ -405,12 +409,11 @@ footer .btnNav {
     resize: none;
     height: 55px;
   }
-  ul{
+  ul {
     padding: 0px 0px 0px 15px;
   }
   /* footer */
   footer {
-    padding-top: 25px ;
     font-size: 10px;
   }
   .icon-footer {
@@ -422,34 +425,38 @@ footer .btnNav {
     width: 50px;
     object-fit: contain;
   }
+  .logo-certificado {
+    width: 80px;
+    object-fit: contain;
+  }
   footer .btnNav {
     font-size: 10px;
   }
 }
 @media screen and (max-width: 450px) {
-/* contacto */
-.fondo-formulario{
-  padding: 6px;
-}
-.contacto-letra {
-  font-size: 9px;
-}
+  /* contacto */
+  .fondo-formulario {
+    padding: 6px;
+  }
+  .contacto-letra {
+    font-size: 9px;
+  }
 }
 @media screen and (max-width: 310px) {
   /* contacto */
-  .fondo-formulario{
+  .fondo-formulario {
     padding: 6px;
   }
   .contacto-letra {
     font-size: 8px;
   }
+}
+@media screen and (max-width: 270px) {
+  /* contacto */
+  .fondo-formulario {
+    padding: 6px;
   }
-  @media screen and (max-width: 270px) {
-    /* contacto */
-    .fondo-formulario{
-      padding: 6px;
-    }
-    .contacto-letra {
-      font-size: 6px;
-    }
-    }
+  .contacto-letra {
+    font-size: 6px;
+  }
+}
