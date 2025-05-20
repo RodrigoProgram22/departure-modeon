@@ -298,10 +298,13 @@ textarea {
 .enviar-wsp {
   margin-top: 5px;
 }
-/* pie de pagina */
+/* Footer */
 a {
   text-decoration: none;
   transition: 0.5s;
+}
+.terminoYC {
+  width: 160px;
 }
 .tyc:hover {
   color: var(--secundario);
@@ -335,7 +338,7 @@ a {
   object-fit: contain;
 }
 .logo-certificado {
-  width: 180px;
+  width: 90px;
   object-fit: contain;
 }
 footer {
@@ -422,11 +425,11 @@ footer .btnNav {
     transition: all 0.5s;
   }
   .logo-footer {
-    width: 50px;
+    width: 60px;
     object-fit: contain;
   }
   .logo-certificado {
-    width: 80px;
+    width: 50px;
     object-fit: contain;
   }
   footer .btnNav {
